@@ -14,6 +14,10 @@
   /* Styling for the brand name */
   .brand {
     font-size: 1.5em;
+    img{
+        width: 60px;
+        height: 60px;
+    }
   }
   
   /* Hide the menu toggle checkbox */
@@ -309,13 +313,24 @@
     display: flex;
     flex-direction: column;
    .progresbar{
+    color: #aaabad;
     display: flex;
     flex-direction: column;
     gap: 30px;
    }
+   .skl-percent{
+    display: flex;
+    justify-content: space-between;
+   }
     .txt-flex{
         display: flex;
         gap: 90px;
+        .progresbar{
+            .progress{
+                width: 700px;
+                height: 4px;
+            }
+        }
     }
     .skl-head{
 
@@ -351,7 +366,7 @@
         }
         .skl-desc{
             width: 600px;
-            color: #333;
+            color: #8d8b8b;
         }
 
     }
@@ -537,6 +552,30 @@
     .icn,.hero-image{
         display: none;
     }
-    
+    .skills-container{
+        .skl-head{
+            p{
+                font-size: 60px;
+            }
+        }
+        .skl-txt{
+            .skl-desc{
+                width: 400px;
+                font-size: 10px;
+            }
+        }
+        padding-top: 300px;
+        .txt-flex{
+            display: flex;
+            flex-direction: column;
+           .progresbar{
+            width: 100%;
+            .progress{
+                height: 4px;
+                width: 100%;
+            }
+           }
+        }
+    }
 }
 

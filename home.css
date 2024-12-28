@@ -14,6 +14,10 @@
 .brand {
   font-size: 1.5em;
 }
+.brand img {
+  width: 60px;
+  height: 60px;
+}
 
 /* Hide the menu toggle checkbox */
 .menu-toggle {
@@ -290,13 +294,22 @@
   flex-direction: column;
 }
 .skills-container .progresbar {
+  color: #aaabad;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+.skills-container .skl-percent {
+  display: flex;
+  justify-content: space-between;
+}
 .skills-container .txt-flex {
   display: flex;
   gap: 90px;
+}
+.skills-container .txt-flex .progresbar .progress {
+  width: 700px;
+  height: 4px;
 }
 .skills-container .skl-head p {
   font-size: 100px;
@@ -332,7 +345,7 @@
 }
 .skills-container .skl-txt .skl-desc {
   width: 600px;
-  color: #333;
+  color: #8d8b8b;
 }
 
 .prj-container {
@@ -479,5 +492,26 @@
   }
   .icn, .hero-image {
     display: none;
+  }
+  .skills-container {
+    padding-top: 300px;
+  }
+  .skills-container .skl-head p {
+    font-size: 60px;
+  }
+  .skills-container .skl-txt .skl-desc {
+    width: 400px;
+    font-size: 10px;
+  }
+  .skills-container .txt-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-container .txt-flex .progresbar {
+    width: 100%;
+  }
+  .skills-container .txt-flex .progresbar .progress {
+    height: 4px;
+    width: 100%;
   }
 }/*# sourceMappingURL=home.css.map */
